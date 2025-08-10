@@ -60,3 +60,7 @@
 
 
 十四、新增一個git與Github教學影片連結檔案，再次push新增的檔案到Github雲端上
+# git status
+# git commit -m "新增一個git與Github教學影片連結檔案" 
+# git push
+

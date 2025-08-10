@@ -21,6 +21,8 @@
 
 # git add . 
 # git status  =>此時新加入檔案會變成綠色
-# git commit -m "add test.py file"
+# git commit -m "增加一個版本控制檔案 README.md"
 
 如果要清空螢幕內容可下 # clear 指令清空螢幕畫面
+
+六、如果檔案被修改，必須再次commit一次

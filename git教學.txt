@@ -17,11 +17,11 @@
 
 五. 要加入新的檔案版本控制追蹤
 
-在專案資料夾新增一個程式檔案 README.md
+在專案資料夾新增一個程式檔案 git教學.txt
 
 # git add . 
 # git status  =>此時新加入檔案會變成綠色
-# git commit -m "增加一個版本控制檔案 README.md"
+# git commit -m "增加一個版本控制檔案 git教學.txt"
 
 如果要清空螢幕內容可下 # clear 指令清空螢幕畫面
 
@@ -33,6 +33,10 @@
 # git diff --oneline
 
 八、如果發現最後版本錯誤，要還原到某個版本，可以輸入
-# git checkout 版本ID  -- README.md
+# git checkout 版本ID  -- git教學.txt
 # git status=> 查看狀態
 # git commit -m "檔案XXX還原到(版本ID)的正確的版本"
+
+九、如果要比較跟最初版本內容差異，則可輸入
+# git diff 版本ID -- git教學.txt
+

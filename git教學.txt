@@ -29,14 +29,22 @@
 
 七、查看檔案修改前後差異
 # git diff
-或者可以用精簡模式比對先前版本差異
-# git diff --oneline
 
-八、如果發現最後版本錯誤，要還原到某個版本，可以輸入
+
+八、檢視log檔案內容變更快照： # git log
+
+或者可以用精簡模式比對先前版本差異
+# git log --oneline
+
+九、如果發現最後版本錯誤，要還原到某個版本，可以輸入
 # git checkout 版本ID  -- git教學.txt
 # git status=> 查看狀態
 # git commit -m "檔案XXX還原到(版本ID)的正確的版本"
 
-九、如果要比較跟最初版本內容差異，則可輸入
+十、如果要比較跟最初版本內容差異，則可輸入
 # git diff 版本ID -- git教學.txt
 
+十一、還原到某個版本控制階段：
+# git checkout 版本ID --  git教學.txt 
+# git status
+# git commit -m "將git教學.txt 還原到 某個版本ID"

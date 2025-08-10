@@ -48,3 +48,8 @@
 # git checkout 版本ID --  git教學.txt 
 # git status
 # git commit -m "將git教學.txt 還原到 某個版本ID"
+
+
+十二、如果要還原到某個版本，且要捨棄後續版本控制的話(此操作不可逆，要先備份)
+# git reset --hard (某個版本ID) 
+

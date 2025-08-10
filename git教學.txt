@@ -1,0 +1,26 @@
+一、查看  git 版本
+
+二、初始設置Git帳號與郵件
+
+# git config --global user.name "Jimmy"
+# git config --global user.email "Jimmy@aseglobal.com
+
+
+三.git 初始化
+
+# git init
+
+四. git 狀態查詢
+
+# git status
+
+
+五. 要加入新的檔案版本控制追蹤
+
+在專案資料夾新增一個程式檔案 README.md
+
+# git add . 
+# git status  =>此時新加入檔案會變成綠色
+# git commit -m "add test.py file"
+
+如果要清空螢幕內容可下 # clear 指令清空螢幕畫面

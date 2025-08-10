@@ -32,3 +32,7 @@
 或者可以用精簡模式比對先前版本差異
 # git diff --oneline
 
+八、如果發現最後版本錯誤，要還原到某個版本，可以輸入
+# git checkout 版本ID  -- README.md
+# git status=> 查看狀態
+# git commit -m "檔案XXX還原到(版本ID)的正確的版本"

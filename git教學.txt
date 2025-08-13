@@ -64,3 +64,8 @@
 # git commit -m "新增一個git與Github教學影片連結檔案" 
 # git push
 
+
+十五、若要排除不要被git版本追蹤但又要保留目前目錄與檔案的話，可以下底下指令
+# git rm -r --cached  檔案或目錄的完整路徑
+# git status
+# git commit -m "排除不做版控的目錄與檔案"

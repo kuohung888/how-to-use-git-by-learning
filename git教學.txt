@@ -69,3 +69,23 @@
 # git rm -r --cached  檔案或目錄的完整路徑
 # git status
 # git commit -m "排除不做版控的目錄與檔案"
+
+十六、萬一要提交到github遇到衝突或被拒絕推送，必須將有衝突的檔案或目錄，重新加入再做一次commit，且要合併github上面的版本，再重新推送變更到 github。如下：
+
+確認遠端名稱與分支
+# git remote -v
+
+取得並合併遠端更新
+#git pull origin main
+
+如果有衝突 (conflict)
+
+#git add <衝突已解決的檔案>
+#git commit   # Git 會自動用合併訊息
+
+合併完成後，重新推送
+#git push origin main
+
+預防建議
+
+推送前先 git fetch origin 並 git log HEAD origin/main --oneline，檢視遠端新提交

@@ -89,3 +89,40 @@
 預防建議
 
 推送前先 git fetch origin 並 git log HEAD origin/main --oneline，檢視遠端新提交
+
+
+十七、萬一初始版本被刪除，且遺失版本控制，要重新覆蓋最原始的專案目錄與檔案的話，可先解除原先有問題的專案目錄版本控制，再清空後重新覆蓋最原始版本專案
+
+要解除現有專案目錄被git版本控制，可在Poweshell 模式下底下指令
+#Remove-Item -Recurse -Force .git
+
+重新覆蓋最原始專案目錄後，重新初始化該專案git版本控制，如下
+重新初始化 Git 倉庫
+#git init
+
+覆蓋原有初始專案目錄，並做第初始化提交
+#git add .
+#git commit -m "重新初始化專案並提交新版本"
+
+初始化後建議先推送最原始版本到 github或 gitlab保存備份
+綁定遠端倉庫並推送
+
+記得先到 github 或 gitlab 先建立該專案倉庫，如底下，再複製該專案倉庫git路徑貼上後再推送初始版本目錄檔案到雲端gitlab或 github
+如果有多人使用，記得先建立自己的分支再提交，避免覆蓋主要main或覆蓋到別人相同專案目錄或檔案
+
+#git remote add origin https://github.com/你的帳號/你的倉庫.git
+#git push -u origin main
+
+如需強制覆蓋遠端（慎用）
+git push -u origin main --force
+
+
+十八、如果你只想清空 commit 歷史，保持原本的 .gitignore 或其它設定，可以用「orphan branch」方式：
+git checkout --orphan fresh-start
+git add .
+git commit -m "全新初始化，不帶舊有歷史"
+git branch -D main
+git branch -m main
+git push -u origin main --force
+
+這樣你不用刪除整個 .git 資料夾，也能快速清空所有舊有歷史。
